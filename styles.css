@@ -37,6 +37,7 @@ nav a { color: white; display: inline-flex; align-items: center; min-height: 44p
 nav a:hover { color: var(--yellow); }
 nav a:focus-visible { outline-color: var(--yellow); }
 .main-nav { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px; }
+body[data-view="flyer"] .main-nav { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 body[data-view="all"] .main-nav { grid-template-columns: repeat(7, minmax(0, 1fr)); }
 .main-nav a { min-width: 0; flex-direction: column; justify-content: center; padding: 8px 4px; line-height: 1.5; text-align: center; }
 .main-nav small { font-size: .72rem; margin-top: 3px; }
